@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+        padding: 20px;
+        margin: auto;
+        margin-left: 100px;
+        margin-right: 50px;
+      }
+
+      .grid-item {
+        padding: 10px;
+        text-align: center;
+        height: 400px;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      /* .flexx {
+        display: flex;
+        justify-content: space-between; */
+      /* } */
+      .heading {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 20px 0;
+      }
+
+      .flexx {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 20px 0;
+      }
+
+      .flexx img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px;
+      }
+
+      @media (max-width: 767px) {
+        .heading {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media (max-width: 1199px) {
+        /* Medium screens: 2-column grid */
+        .grid-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 767px) {
+        .grid-container {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 1199px) {
+        /* Medium screens: smaller images */
+        .flexx img {
+          max-width: 50%;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .flexx {
+          flex-direction: column;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 class="heading">Board Members</h2>
+    <div class="flexx">
+      <img
+        src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg"
+        alt=""
+      />
+      <img
+        src="https://www.masaischool.com/images/our-investors/unitus-borderless.svg"
+        alt=""
+      />
+      <img
+        src="https://www.masaischool.com/images/our-investors/omidyar-borderless.svg"
+        alt=""
+      />
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Vijay Shankar Sharma
+        </p>
+        <span
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+          >Founder And ceo</span
+        >
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"
+          alt=""
+          style="height: 45px; position: relative; bottom: 50px"
+        />
+      </div>
+      <!-- 2nd GRIDDDDDDD -->
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Kunal SAHA
+        </p>
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+        >
+          Founder
+        </p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+          alt=""
+          style="height: 45px; position: relative; bottom: 60px"
+        />
+      </div>
+
+      <!-- 3rd GRIDDDDD -->
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Amrish Rau
+        </p>
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+        >
+          CEO
+        </p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png"
+          alt=""
+          style="height: 45px; position: relative; bottom: 60px"
+        />
+      </div>
+      <!-- 4th -->
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Sampad Swain
+        </p>
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+        >
+          Co-Founder & CEO
+        </p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png"
+          alt=""
+          style="height: 45px; position: relative; bottom: 60px"
+        />
+      </div>
+
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Ankush Sachdeva
+        </p>
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+        >
+          Co-Founder & CEO
+        </p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg"
+          alt=""
+          style="height: 45px; position: relative; bottom: 60px"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/bhanu_pratap_singh_sharechat_11fdd7b47a.jpg"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Bhanu Pratap Singh
+        </p>
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+        >
+          Co-Founder & CTO
+        </p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg"
+          alt=""
+          style="height: 45px; position: relative; bottom: 60px"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/farid_ahsan_sharechat_1251f28141.png"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Farid Ahsan
+        </p>
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+        >
+          Co-Founder & CTO
+        </p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg"
+          alt=""
+          style="height: 45px; position: relative; bottom: 60px"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Amit Kumar Agarwal
+        </p>
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+        >
+          Founder & CEO
+        </p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg"
+          alt=""
+          style="height: 45px; position: relative; bottom: 60px"
+        />
+      </div>
+
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Akhil_Gupta_Nobroker_539cd97f6c.jpg"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Akhil Gupta
+        </p>
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+        >
+          Founder & CTO
+        </p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg"
+          alt=""
+          style="height: 45px; position: relative; bottom: 60px"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/saurbh_garg_nobroker_c0c71cc431.jpeg"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Akhil Gupta
+        </p>
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+        >
+          Founder & CTO
+        </p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg"
+          alt=""
+          style="height: 45px; position: relative; bottom: 60px"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vipin_Pathak_Care24_acd02cd173.jpg"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Vipin Pathak
+        </p>
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+        >
+          Co-Founder & CEO
+        </p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg"
+          alt=""
+          style="height: 45px; position: relative; bottom: 60px"
+        />
+      </div>
+
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Ramakant_Sharma_livespace_0308e3627d.jpg"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Ramakant Sharma
+        </p>
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+        >
+          Founder
+        </p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/livspace_f9318b2e8d.png"
+          alt=""
+          style="height: 45px; position: relative; bottom: 60px"
+        />
+      </div>
+
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Mohit_Tandon_Delhivery_b43fee16c4.jpg"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Mohit Tandon
+        </p>
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+        >
+          Founder
+        </p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/delhivery_17e85a76ed.png"
+          alt=""
+          style="height: 45px; position: relative; bottom: 60px"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Abhishek_Goyal_tracxn_5b2f61d87d.jpg"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Abhishek Goyal
+        </p>
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+        >
+          Co-Founder
+        </p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/tracxn_6d0c3de2ee.svg"
+          alt=""
+          style="height: 45px; position: relative; bottom: 60px"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Anurag_Jain_Kredx_b6ed6a31c6.jpg"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Anurag Jain
+        </p>
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+        >
+          Founder & Executive Director
+        </p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/kredx_rect_204437078a.svg"
+          alt=""
+          style="height: 45px; position: relative; bottom: 60px"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Harshvardhan_Lunia_Lendingkart_44d72a6fcd.jpg"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Harshvardhan Lunia
+        </p>
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+        >
+          Co-Founder & CEO
+        </p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/lendingkart_rect_d0d30d7b53.svg"
+          alt=""
+          style="height: 45px; position: relative; bottom: 60px"
+        />
+      </div>
+
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sunil_rao_amazon_dfd2daa06d.jpeg"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Sunil Rao
+        </p>
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+        >
+          Country Head Corporate B
+        </p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amazon_rect_9e0cd101b1.svg"
+          alt=""
+          style="height: 45px; position: relative; bottom: 60px"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sharda_Balaji_Novojuris_2a206f2f88.jpg"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Sharda Balaji
+        </p>
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+        >
+          Founder
+        </p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/novojuris_ad9499f5b9.svg"
+          alt=""
+          style="height: 45px; position: relative; bottom: 60px"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Kulin_Shah_Onsurity_0dd3a1802f.jpg"
+          alt=""
+        />
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 800;
+            position: relative;
+            bottom: 20px;
+          "
+        >
+          Kulin Shah
+        </p>
+        <p
+          style="
+            font-size: x-large;
+            font-weight: 200;
+            position: relative;
+            bottom: 40px;
+            gray: 700px;
+          "
+        >
+          Co-Founder
+        </p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/onsurity_5500f1c3b1.png"
+          alt=""
+          style="height: 45px; position: relative; bottom: 60px"
+        />
+      </div>
+    </div>
+  </body>
+</html>
